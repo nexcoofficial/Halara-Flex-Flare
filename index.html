@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halara Flex™ High Waisted Side Zipper Pocket Work Flare Pants - Mila Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        .color-option {
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+        .color-option:hover {
+            transform: scale(1.1);
+        }
+        .color-option.active {
+            border: 2px solid #3b82f6;
+            transform: scale(1.1);
+        }
+        .image-gallery img {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .image-gallery img:hover {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+        .image-gallery img.active {
+            border-color: #3b82f6;
+        }
+        .price-strike {
+            position: relative;
+        }
+        .price-strike::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #ef4444;
+            transform: rotate(-10deg);
+        }
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(59, 130, 246, 0.2);
+            z-index: 1000;
+        }
+        .scroll-progress {
+            height: 100%;
+            background: #3b82f6;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Scroll Progress -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Halara</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Produk</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Tentang</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">Kontak</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-blue-600 transition">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                    <button class="text-gray-700 hover:text-blue-600 transition">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Image Gallery -->
+            <div class="space-y-4">
+                <div class="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                    <img id="mainImage" src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/595501131557-1400x.webp" 
+                         alt="Halara Flex Flare Pants" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        -50% OFF
+                    </div>
+                </div>
+                
+                <!-- Thumbnail Gallery -->
+                <div class="grid grid-cols-6 gap-2 image-gallery">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/595501131557-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg active" onclick="changeImage(this)">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg" onclick="changeImage(this)">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/871466636586-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg" onclick="changeImage(this)">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg" onclick="changeImage(this)">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg" onclick="changeImage(this)">
+                    <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp" 
+                         class="w-full aspect-square object-cover rounded-lg" onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="space-y-6">
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900">Halara Flex™ High Waisted Side Zipper Pocket Work Flare Pants</h2>
+                    <div class="flex items-center mt-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">(4.8 dari 5 | 2,847 ulasan)</span>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="fade-in">
+                    <div class="flex items-baseline space-x-3">
+                        <span class="text-3xl font-bold text-gray-900">Rp 199.000</span>
+                        <span class="text-xl text-gray-500 price-strike">Rp 398.000</span>
+                    </div>
+                    <p class="text-green-600 font-semibold mt-1">Hemat Rp 199.000 (50%)</p>
+                </div>
+
+                <!-- Color Selection -->
+                <div class="fade-in">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Pilih Warna:</h3>
+                    <div class="flex space-x-3">
+                        <div class="color-option active" data-color="navy" 
+                             data-images='["https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/871466636586-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp"]'>
+                            <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/871466636586-1400x.webp" 
+                                 alt="Navy" class="w-16 h-16 rounded-full object-cover cursor-pointer">
+                        </div>
+                        <div class="color-option" data-color="black" 
+                             data-images='["https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/898890218045-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp"]'>
+                            <img src="https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/898890218045-1400x.webp" 
+                                 alt="Hitam" class="w-16 h-16 rounded-full object-cover cursor-pointer">
+                        </div>
+                        <div class="color-option" data-color="gray" 
+                             data-images='["https://mpir.halarastatic.com/upload/online/pu/2025/3/28/17/27/128266322930-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp"]'>
+                            <img src="https://mpir.halarastatic.com/upload/online/pu/2025/3/28/17/27/128266322930-1400x.webp" 
+                                 alt="Abu Tua" class="w-16 h-16 rounded-full object-cover cursor-pointer">
+                        </div>
+                        <div class="color-option" data-color="brown" 
+                             data-images='["https://mpir.halarastatic.com/upload/online/pu/2025/6/6/19/4/714801877575-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp"]'>
+                            <img src="https://mpir.halarastatic.com/upload/online/pu/2025/6/6/19/4/714801877575-1400x.webp" 
+                                 alt="Coksu" class="w-16 h-16 rounded-full object-cover cursor-pointer">
+                        </div>
+                        <div class="color-option" data-color="army" 
+                             data-images='["https://mpir.halarastatic.com/upload/online/pu/2025/2/27/18/55/607436658413-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/475635385728-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/105354342560-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/973040528069-1400x.webp","https://mpir.halarastatic.com/upload/online/pu/2025/4/16/11/53/667882316377-1400x.webp"]'>
+                            <img src="https://mpir.halarastatic.com/upload/online/pu/2025/2/27/18/55/607436658413-1400x.webp" 
+                                 alt="Army" class="w-16 h-16 rounded-full object-cover cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="fade-in">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Pilih Ukuran:</h3>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="py-3 border-2 border-blue-500 text-blue-600 rounded-lg font-semibold">M</button>
+                        <button class="py-3 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-600 transition">L</button>
+                        <button class="py-3 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-600 transition">XL</button>
+                        <button class="py-3 border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:text-blue-600 transition">XXL</button>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="fade-in">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Fitur Utama:</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> High-waisted design untuk kenyamanan maksimal</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Saku samping dengan resleting praktis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Bahan elastis 4-way stretch</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Potongan flare yang stylish</li>
+                    </ul>
+                </div>
+
+                <!-- Order Button -->
+                <div class="fade-in">
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="mila" data-product-slug="halara-flex-flare" data-product-id="687a62cbc617f1438a039dbe" id="oo-embed-form-halara-flex-flare-9698" data-origin="orderonline">
+                            <div class="ooef-loader">
+                                <style>
+                                    .ooef-loader{visibility:hidden;opacity:0;position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;animation:ooLoadingIn 10s ease;-webkit-animation:ooLoadingIn 10s ease;animation-fill-mode:forwards;overflow:hidden}@keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}@-webkit-keyframes ooLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}.ooef-loader>div,.ooef-loader>div:after{border-radius:50%;width:2.5rem;height:2.5rem}.ooef-loader>div{font-size:10px;position:relative;text-indent:-9999em;border:.25rem solid #f5f5f5;border-left:.25rem solid #55c4cf;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:ooLoading 1.1s infinite linear;animation:ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left:.25rem solid #ff4500;animation-duration:5s}@-webkit-keyframes ooLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes ooLoading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+                                </style>
+                                <div aria-live="polite" role="status"><div>Loading...</div></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="fade-in">
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <i class="fas fa-shipping-fast text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm text-gray-600">Gratis Ongkir</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-undo text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm text-gray-600">30 Hari Retur</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shield-alt text-3xl text-blue-600 mb-2"></i>
+                            <p class="text-sm text-gray-600">Garansi Asli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Sections -->
+        <div class="mt-16 space-y-12">
+            <!-- Product Description -->
+            <section class="fade-in">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Deskripsi Produk</h3>
+                <div class="prose max-w-none text-gray-600">
+                    <p>Upgrade your athleisure game dengan Halara Flex™ High Waisted Side Zipper Pocket Work Flare Pants! 
+                    Desain high-waisted memberikan dukungan yang sempurna untuk aktivitas sehari-hari, sementara potongan flare 
+                    yang stylish membuatmu terlihat fashionable kapan pun dan di mana pun.</p>
+                    <p>Dilengkapi dengan saku samping beresleting untuk menyimpan barang-barang pentingmu dengan aman. 
+                    Bahan 4-way stretch premium memastikan kenyamanan maksimal tanpa membatasi gerakanmu.</p>
+                </div>
+            </section>
+
+            <!-- Size Guide -->
+            <section class="fade-in">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Panduan Ukuran</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg shadow">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ukuran</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pinggang (cm)</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pinggul (cm)</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Paha (cm)</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Panjang (cm)</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kaki (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">M</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">54</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">99</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">62.4</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">100.5</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">23.8</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">L</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">58</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">103</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">65</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">101.5</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">25</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">XL</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">62</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">107</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">67.6</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">102.5</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">26.2</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2XL</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">66</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">111</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">70.2</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">103.5</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">27.4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Reviews -->
+            <section class="fade-in">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Ulasan Pelanggan</h3>
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 font-semibold">Siti Rahmawati</span>
+                        </div>
+                        <p class="text-gray-600">"Barang sampai dengan cepat, kualitas bahan sangat bagus dan nyaman dipakai untuk olahraga maupun santai!"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 font-semibold">Dewi Anggraeni</span>
+                        </div>
+                        <p class="text-gray-600">"Saya beli warna navy, warnanya bagus dan modelnya sangat flattering untuk tubuh saya. Recommended!"</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Halara</h3>
+                    <p class="text-gray-400">Tampil stylish dengan koleksi fashion terbaru dari Mila Fashion.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Produk</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Pants</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tops</a></li>
+                        <li><a href="#" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Customer Service</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Hubungi Kami</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pengembalian</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-tiktok text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Halara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Progress
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
+        });
+
+        // Image Gallery
+        function changeImage(img) {
+            document.getElementById('mainImage').src = img.src;
+            document.querySelectorAll('.image-gallery img').forEach(i => i.classList.remove('active'));
+            img.classList.add('active');
+        }
+
+        // Color Selection
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.color-option').forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Get the images array from data attribute
+                const images = JSON.parse(this.dataset.images);
+                
+                // Update main image
+                document.getElementById('mainImage').src = images[0];
+                
+                // Update gallery thumbnails
+                const thumbnails = document.querySelectorAll('.image-gallery img');
+                thumbnails.forEach((thumb, index) => {
+                    thumb.src = images[index] || images[0]; // Fallback to first image if not enough variants
+                    thumb.classList.remove('active');
+                    if(index === 0) thumb.classList.add('active');
+                });
+            });
+        });
+
+        // Fade In Animation on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- OrderOnline Script -->
+    <script>
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                    if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://mila.orderonline.id');
+            ooe('init', '5f1a7b8fa9bf807da24d83bb', '687a62cbc617f1438a039dbe', '687a62cbc617f1438a039dbf', 'oo-embed-form-halara-flex-flare-9698', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e); throw e;
+        }
+    </script>
+</body>
+</html>
